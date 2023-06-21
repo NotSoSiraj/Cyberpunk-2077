@@ -1,0 +1,526 @@
+@font-face {
+    font-family: BlenderThin;
+    src: url(thin.ttf);
+}
+
+@font-face {
+    font-family: BlenderExtraThin;
+    src: url(extrathin.ttf);
+}
+
+@font-face {
+    font-family: BlenderMedium;
+    src: url(medium.ttf);
+}
+
+@font-face {
+    font-family: BlenderBold;
+    src: url(bold.ttf);
+}
+
+@font-face {
+    font-family: BlenderExtraBold;
+    src: url(verybold.ttf);
+}
+
+@font-face {
+    font-family: Refinery;
+    src: url(refinery.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 458vh;
+
+}
+
+.bannerVideo {
+    width: 100%;
+    height: 458vh;
+
+}
+
+header {
+    font-family: "BlenderThin";
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(226 226 226 / 0%) 0%, rgb(0 0 0 / 47%) 100%);
+    height: 100px;
+    justify-content: space-between;
+    padding: 12px 28px;
+}
+
+.leftNav img {
+    width: 267px;
+}
+
+.rightNav ul {
+    border-right: 0px solid transparent;
+    border-top: 6px solid #fcee0a;
+}
+
+.rightNav ul li {
+    list-style: none;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+
+
+.rightNav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 7px 18px;
+    display: block;
+}
+
+#lastLink {
+    background-color: #fcee0a;
+    color: black;
+    font-family: "BlenderMedium";
+}
+
+.rightNav ul li a:hover {
+    background-color: #fcee0a;
+    color: black;
+}
+
+.rightNav {
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid #fcee0a;
+}
+
+.bannerVideo {
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bannerVideo video {
+    position: absolute;
+    top: -53px;
+    left: 0;
+    width: 100%;
+    user-select: none;
+    
+    pointer-events: none;
+    z-index: -1;
+}
+
+.topMain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 54vh;
+    width: 100%;
+    gap: 15px;
+    position: relative;
+}
+
+.topMain h1 {
+    color: white;
+    font-family: "Refinery";
+    font-size: 55px;
+}
+
+.Video {
+    width: 100%;
+    height: 113vh;
+    background: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(95 95 96 / 0%) 100%);
+    position: absolute;
+    left: 0;
+}
+
+.flexButtons {
+    display: flex;
+    gap: 15px;
+}
+
+.flexButtons button {
+    /* border-image: url(/build/images/cp-btn-yellow-fd1ca428.svg) 0 20 fill; */
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid #fcee0a;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    min-width: 232px;
+    font-size: 22px;
+    font-family: "BlenderBold";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(0 0 0 / 77%);
+    color: #fcee0a;
+    user-select: none;
+}
+
+
+main {
+    height: 458vh;
+
+}
+
+
+.mainSection {
+    position: relative;
+    padding: 1px 52px;
+    display: flex;
+    gap: 67px;
+    margin-top: 29px;
+    height: 85vh;
+    background: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(95 95 96 / 0%) 100%);
+}
+
+.leftMain img {
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: rgba(0, 0, 0, .6);
+    border: 8px solid #00f0ff;
+}
+
+.leftMain {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.leftMain span {
+    color: white;
+    font-size:23px;
+    font-family: "BlenderThin";
+
+}
+.rightMain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+        height: 30vw;
+}
+.rightMain img {
+    width: 100%;
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid #fced0a;
+}
+
+.gamePass {
+    
+    width: 48%;
+    height: 50%;
+
+}
+
+.gamePass span {
+    color: white;
+    margin-top: 12px;
+    display: block;
+    font-size:23px;
+    font-family: "Blenderbold";
+}
+
+.OutButton {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OutButton button {
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid #00f0ff;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    min-width: 232px;
+    font-size: 22px;
+    font-family: "BlenderBold";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(0 0 0 / 77%);
+    color: #00f0ff;
+    user-select: none;
+}
+
+.MainSecondPage {
+    height: 130vh;
+    width: 100%;
+    background-color: #fced0a;
+}
+.MainSecondPage{
+    display: flex;
+    padding-top: 151px;
+    flex-direction: column;
+    padding: 74px 52px 0px 52px;
+    gap: 44px;
+    height: 132vh;
+}
+.firstMain h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Refinery";
+    font-size: 48px;
+   
+}
+
+.firstMain {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.firstMain p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    width: 54%;
+    font-family: "BlenderThin";
+}
+
+.secondMain {
+    display: flex;
+    gap: 7px;
+    padding: 7px;
+    height: 61%;
+    background: black;
+}
+
+
+.profileone {
+    width: 26%;
+    background-image: url("pic\ one.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profiletwo {
+    width: 26%;
+    background-image: url("pictwo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profilethree {
+    width: 26%;
+    background-image: url("pic\ three.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profilefour {
+    width: 26%;
+    background-image: url("pcifour.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+
+
+.profile button {
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid #00f0ff;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    min-width: 232px;
+    font-size: 22px;
+    font-family: "BlenderBold";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(0 0 0 / 77%);
+    color: #00f0ff;
+    user-select: none;
+}
+
+.MainThirdPage {
+    width: 100%;
+    height: 76vh;
+    border-top: 4px solid #dfd322;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 52px 0px 52px;
+    background: #fced0a;
+}
+
+.MainThirdPage h1 {
+    font-family: "BlenderBold";
+}
+
+.MainThirdPage p {
+    font-family: "BlenderThin";
+    font-size: 22px;
+    width: 80%;
+}
+
+.MainTop {
+    text-align: center;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CenterMain {
+    width: 64%;
+    
+}
+.flexInputs{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.CenterMain input[type="email"] {
+    padding: 13px;
+    width: 67%;
+    font-size: 22px;
+    font-family: "BlenderThin";
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+}
+
+.CenterMain input[type="submit"]{
+    clip-path: polygon(13.3333333333px 0, 100% 0, 100% 25px, calc(100% - 15px) 40px, calc(100% - 15px) 2000%, 0 2000%, 0 13.3333333333px);
+    background: transparent;
+    border: 1px solid #000000;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    min-width: 232px;
+    font-size: 22px;
+    font-family: "BlenderBold";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    user-select: none;
+}
+
+.checkbox span {
+    font-family: "BlenderThin";
+    font-size: 15px;
+    width: 66%;
+    display: block;
+}
+
+.checkbox {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    padding: 12px;
+}
+
+.MainFourPage {
+    width: 100%;
+    background: #fced0a;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 70px 52px 0px 52px;
+    gap: 74px;
+
+    border-top: 4px solid #dfd322;
+}
+
+
+.MainFourPage ul li {
+    display: inline-block;
+    padding: 12px 36px;
+    list-style: none;
+    font-size: 17px;
+}
+
+
+.MainFourPage ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "BlenderBold";
+}
+.PartnersOne  {
+    width: 44%;
+}
+.PartnersTwo {
+    width: 29%;
+}
+
+.Partners{
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+}
+
+.footerText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footerText a {
+    text-decoration: none;
+    color: black;
+    font-family: "BlenderBold";
+}
+
+.footerText p {
+    font-family: "BlenderThin";
+    font-size: 15px;
+    width: 66%;
+    
+}
